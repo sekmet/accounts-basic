@@ -1,17 +1,17 @@
 Package.describe({
-  name: 'std:accounts-basic',
-  version: '1.1.12',
-  summary: 'Basic – Accounts UI for React in Meteor 1.3',
-  git: 'https://github.com/studiointeract/accounts-basic',
+  name: 'skt:accounts-materialize',
+  version: '1.0.0',
+  summary: 'Materialize – Accounts UI for React in Meteor 1.4+',
+  git: 'https://github.com/sekmet/accounts-materialize',
   documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.3');
+  api.versionsFrom('1.4');
   api.use('ecmascript');
   api.use('underscore');
   api.use('fourseven:scss@3.4.1');
-  api.use('std:accounts-ui@1.1.20');
+  api.use('std:accounts-ui@1.2.19');
 
   api.addFiles([
     'styles.scss'
